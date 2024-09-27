@@ -42,7 +42,7 @@ function Navbar() {
         <a href="/course">Course</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/contact">Contact</a>
       </li>
       <li>
         <a>About</a>
@@ -52,7 +52,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={` max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${
+        className={` max-w-screen-2xl container mx-auto mb-0 md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${
           sticky
             ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out"
             : ""
@@ -60,7 +60,7 @@ function Navbar() {
       >
         <div className="navbar ">
           <div className="navbar-start">
-            <div className="dropdown">
+            <div className="dropdown ">
               <div
                 tabIndex={0}
                 role="button"
@@ -83,7 +83,7 @@ function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  dark:bg-slate-600 dark:text-white duration-300 "
               >
                 {navItems}
               </ul>
@@ -154,7 +154,7 @@ function Navbar() {
                 >
                   Login
                 </a>
-               <Login/>
+               <Login />
               </div>
               </div>            
           </div>
